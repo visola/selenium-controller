@@ -1,0 +1,14 @@
+{
+  "name": "selenium-controller",
+  "version": "1.0.0",
+  "description": "Simple Selenium Controller",
+  "main": "index.js",
+  "author": "Vinicius Isola",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.11.0",
+    "esprima": "^4.0.0",
+    "js-yaml": "^3.9.1",
+    "selenium-webdriver": "^3.5.0"
+  }
+}
