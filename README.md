@@ -4,7 +4,17 @@ Selenium controller is a Node.js application that can be used to test web applic
 
 ### Installation
 
-Clone the repo and make sure [Chrome webdriver](https://sites.google.com/a/chromium.org/chromedriver/) is installed and setup correctly.
+Before anything make sure [Chrome webdriver](https://sites.google.com/a/chromium.org/chromedriver/) is installed and setup correctly.
+
+Clone the repo and run npm install:
+
+```bash
+$ git clone https://github.com/visola/selenium-controller.git
+$ cd selenium-controller/
+$ npm install
+```
+
+Starting using it!
 
 ### Long Description
 
