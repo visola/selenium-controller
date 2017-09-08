@@ -24,8 +24,8 @@ An example would be something like:
 
 ```bash
 $ node index \
-  -a `pwd`/samples/react-to-do/actions \
-  -a `pwd`/samples/shared-actions \
+  -a samples/react-to-do/actions \
+  -a samples/shared-actions \
   -f samples/react-to-do/properties.yml \
   -e GoToReactToDo \
   -e "TakeScreenshot('home.png')" \
@@ -35,7 +35,7 @@ $ node index \
 
 This command is doing the following:
 
-- ``-a `pwd`/samples/react-to-do/actions`` and ``-a `pwd`/samples/shared-actions`` - Load action classes from these directories
+- `-a samples/react-to-do/actions` and `-a samples/shared-actions` - Load action classes from these directories
 - `-f react-to-do/properties.yml` - Read environment properties from this file
 - `-e GoToReactToDo`, `-e "TakeScreenshot('home.png')"` ... - Execute these actions
 
@@ -68,8 +68,8 @@ Some sample actions that uses [React To Do](http://todomvc.com/examples/react) a
 
 ```bash
 node index \
-  -a `pwd`/samples/react-to-do/actions \
-  -a `pwd`/samples/shared-actions \
+  -a samples/react-to-do/actions \
+  -a samples/shared-actions \
   -f samples/react-to-do/properties.yml \
   -s ./samples/react-to-do/script.js
 ```
