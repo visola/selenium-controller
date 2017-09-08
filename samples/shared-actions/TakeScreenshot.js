@@ -6,20 +6,18 @@ class TakeScreenshot {
   }
 
   execute(filename = `${Date.now()}.png`) {
-    return this.driver.takeScreenshot().then((base64Image) => {
-      return new Promise((resolve, reject) => {
-        fs.writeFile(filename, base64Image, 'base64', function(err) {
-          if (err) {
-            console.error("Error while saving screenshot", err);
-            reject();
-          } else {
-            console.log(`Screenshot saved at: ${filename}`);
-            resolve();
-          }
-        });
+    return this.driver.takeScreenshot().then(base64Image => new Promise((resolve, reject) => {
+      fs.writeFile(filename, base64Image, 'base64', (err) => {
+        if (err) {
+          console.error('Error while saving screenshot', err);
+          reject();
+        } else {
+          console.log(`Screenshot saved at: ${filename}`);
+          resolve();
+        }
       });
-    });
+    }));
   }
 }
 
-module.exports = TakeScreenshot
+module.exports = TakeScreenshot;

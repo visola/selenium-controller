@@ -1,4 +1,4 @@
-const { By, Key, until } = require('selenium-webdriver');
+const { By, Key } = require('selenium-webdriver');
 
 class CreateToDo {
   constructor(driver) {
@@ -7,9 +7,9 @@ class CreateToDo {
 
   execute(text) {
     return this.driver
-      .findElement(By.css("input.new-todo"))
+      .findElement(By.css('input.new-todo'))
       .sendKeys(text + Key.ENTER);
   }
 }
 
-module.exports = CreateToDo
+module.exports = CreateToDo;

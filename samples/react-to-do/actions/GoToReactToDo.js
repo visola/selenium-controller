@@ -8,7 +8,7 @@ class GoToReactToDo {
   }
 
   execute() {
-    let { driver, timeout, url } = this;
+    const { driver, timeout, url } = this;
 
     return driver
       .get(url)
@@ -16,4 +16,4 @@ class GoToReactToDo {
   }
 }
 
-module.exports = GoToReactToDo
+module.exports = GoToReactToDo;
