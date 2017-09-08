@@ -1,4 +1,4 @@
-GoToReactToDo
-TakeScreenshot('home.png')
-CreateToDo('Buy Milk')
-TakeScreenshot('buy-milk.png')
+GoToReactToDo;
+TakeScreenshot('home.png');
+CreateToDo('Buy Milk');
+TakeScreenshot('buy-milk.png');
