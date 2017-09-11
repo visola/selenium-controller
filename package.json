@@ -6,7 +6,9 @@
   "author": "Vinicius Isola",
   "license": "ISC",
   "scripts": {
-    "lint": "eslint index.js lib/ samples/"
+    "codecov": "codecov -t 413104b3-6986-4692-9c3b-fe7e22fd80ff",
+    "lint": "eslint index.js lib/ samples/ test/",
+    "test": "nyc --all --reporter=lcov --reporter=html mocha --recursive"
   },
   "dependencies": {
     "commander": "^2.11.0",
@@ -15,9 +17,23 @@
     "selenium-webdriver": "^3.5.0"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
+    "codecov": "^2.3.0",
     "eslint": "^4.6.1",
     "eslint-config-airbnb-base": "^12.0.0",
-    "eslint-plugin-import": "^2.7.0"
+    "eslint-plugin-import": "^2.7.0",
+    "mocha": "^3.5.0",
+    "nyc": "^11.2.1",
+    "sinon": "^3.2.1"
   },
-  "eslintIgnore": ["samples/react-to-do/script.js"]
+  "eslintIgnore": [
+    "samples/react-to-do/script.js",
+    "test/fixtures/**/*.js"
+  ],
+  "nyc": {
+    "include": [
+      "index.js",
+      "lib/**/*.js"
+    ]
+  }
 }
