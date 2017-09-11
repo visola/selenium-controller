@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const Properties = require('../lib/Properties');
+const Properties = require('../../lib/Properties');
 
 describe('Properties', () => {
   let properties;
@@ -18,7 +18,7 @@ describe('Properties', () => {
 
   describe('#addFromFile', () => {
     it('should load file and set properties', () => {
-      properties.addFromFile(`${__dirname}/fixtures/properties.yml`);
+      properties.addFromFile(`${__dirname}/../fixtures/lib/Properties/properties.yml`);
       expect(properties.get('something')).to.equal('value');
     });
   });
