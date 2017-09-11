@@ -23,7 +23,8 @@
     "eslint-config-airbnb-base": "^12.0.0",
     "eslint-plugin-import": "^2.7.0",
     "mocha": "^3.5.0",
-    "nyc": "^11.2.1"
+    "nyc": "^11.2.1",
+    "sinon": "^3.2.1"
   },
   "eslintIgnore": [
     "samples/react-to-do/script.js"
