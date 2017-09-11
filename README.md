@@ -1,4 +1,4 @@
-## Selenium Controller [![Build Status](https://travis-ci.org/visola/selenium-controller.svg?branch=master)](https://travis-ci.org/visola/selenium-controller)
+## Selenium Controller [![Build Status](https://travis-ci.org/visola/selenium-controller.svg?branch=master)](https://travis-ci.org/visola/selenium-controller) [![codecov](https://codecov.io/gh/visola/selenium-controller/branch/master/graph/badge.svg)](https://codecov.io/gh/visola/selenium-controller)
 
 Selenium controller is a Node.js application that can be used to test web applications or execute repetitive tasks using Javascript code and [selenium-webdriver](https://www.npmjs.com/package/selenium-webdriver).
 
