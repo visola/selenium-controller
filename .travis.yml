@@ -5,3 +5,4 @@ script:
   - npm run lint
   - npm test
   - npm run codecov
+  - npm run codacy
